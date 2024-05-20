@@ -23,7 +23,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log in uding your account"
+        android:text="Log in using your account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
@@ -100,7 +100,8 @@
         android:textColor="@color/biru"
         android:text="sign up"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gpunyaakunTextView" />
+        app:layout_constraintStart_toEndOf="@+id/gpunyaakunTextView"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

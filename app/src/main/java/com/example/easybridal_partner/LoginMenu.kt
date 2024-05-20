@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class LoginMenu : AppCompatActivity() {
@@ -13,13 +12,13 @@ class LoginMenu : AppCompatActivity() {
     private lateinit var logintombol: Button
 
     private fun initComponents(){
-        daftar = findViewById(R.id.daftartombol)
+        daftar = findViewById(R.id.daftarTextView)  // tadi malah manggil id dari layout nya signup, makanya crash karena di luar layout login
         logintombol = findViewById(R.id.loginButton)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        // enableEdgeToEdge()  // Comment this out to test if it's causing issues
         setContentView(R.layout.activity_login)
 
         initComponents()
@@ -33,6 +32,5 @@ class LoginMenu : AppCompatActivity() {
             val intent = Intent(this@LoginMenu, MainActivity::class.java)
             startActivity(intent)
         }
-
     }
 }

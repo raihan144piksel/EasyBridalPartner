@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Order"
+        android:id="@+id/Order"
+        android:icon="@drawable/ordernavicon"/>
+    <item android:title="Add"
+        android:id="@+id/Add"
+        android:icon="@drawable/addnavicon"/>
+    <item android:title="Profile"
+        android:id="@+id/Profile"
+        android:icon="@drawable/profilnavicon"/>
+</menu>

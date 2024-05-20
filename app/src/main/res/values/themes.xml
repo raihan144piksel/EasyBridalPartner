@@ -6,4 +6,11 @@
     </style>
 
     <style name="Theme.EasyBridal_Partner" parent="Base.Theme.EasyBridal_Partner" />
+    <style name="Theme.EasyBridal_Partner.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.EasyBridal_Partner.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.EasyBridal_Partner.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

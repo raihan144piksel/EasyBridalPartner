@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/account_profile" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/TextViewNameAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/TextViewEmailAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="thisperson@gmail.com"
+                android:textSize="16sp"
+                 />
+
+            <TextView
+                android:id="@+id/TextViewPhoneAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08945347676"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pencil_icon" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/abu"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/coklat"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="305dp"/>
+
+    </LinearLayout>
+
+<!--Services Section-->
+    <LinearLayout
+        android:id="@+id/ButtonService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginStart="16dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/icons_service"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:padding="16dp"
+                android:text="Service"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/arrow"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/abu"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    </LinearLayout>
+
+<!--Advertisement Section-->
+    <LinearLayout
+        android:id="@+id/ButtonAdvertisement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginStart="16dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ad_icon"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:padding="16dp"
+                android:text="Advertisement"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/arrow"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/abu"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/> <!-- Warna garis diatur di sini -->
+
+    </LinearLayout>
+
+<!--Payment Section-->
+    <LinearLayout
+        android:id="@+id/ButtonPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginStart="16dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/payment_icon"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:padding="16dp"
+                android:text="Payment"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/arrow"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/abu"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/> <!-- Warna garis diatur di sini -->
+
+    </LinearLayout>
+
+<!--Language Section-->
+    <LinearLayout
+        android:id="@+id/ButtonLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginStart="16dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/lang_icon"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/my_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:padding="16dp"
+                android:text="Change Language"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/arrow"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/abu"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/> <!-- Warna garis diatur di sini -->
+
+    </LinearLayout>
+
+</LinearLayout>

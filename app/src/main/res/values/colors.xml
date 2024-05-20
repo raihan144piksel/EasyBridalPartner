@@ -4,5 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="coklat">#AA8F79</color>
     <color name="biru">#0000EE</color>
-    <color name="abu">#999999</color>
+    <color name="abu">#D9D9D9</color>
+    <color name="outline_color">#FF0000</color>
 </resources>

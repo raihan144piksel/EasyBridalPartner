@@ -3,4 +3,7 @@
     <string name="title_activity_oerder_menu">oerderMenu</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_login_menu">LoginMenu</string>
+    <string name="title_activity_sign_up_menu">SignUpMenu</string>
+    <string name="title_activity_forgot_pass_menu">ForgotPassMenu</string>
 </resources>

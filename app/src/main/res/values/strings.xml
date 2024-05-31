@@ -6,4 +6,10 @@
     <string name="title_activity_login_menu">LoginMenu</string>
     <string name="title_activity_sign_up_menu">SignUpMenu</string>
     <string name="title_activity_forgot_pass_menu">ForgotPassMenu</string>
+    <string name="title_activity_account_menu">AccountMenu</string>
+    <string name="title_activity_change_language_menu">changeLanguageMenu</string>
+    <string name="ui_setting">Setting</string>
+    <string name="title_activity_order_adapter">OrderAdapter</string>
+    <string name="title_activity_order">Order</string>
+    <string name="title_activity_order_menu">OrderMenu</string>
 </resources>

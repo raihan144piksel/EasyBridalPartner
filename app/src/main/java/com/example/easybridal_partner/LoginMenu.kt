@@ -4,22 +4,23 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class LoginMenu : AppCompatActivity() {
 
     private lateinit var daftar: TextView
     private lateinit var logintombol: Button
+    private lateinit var forgotPass: TextView
 
     private fun initComponents(){
         daftar = findViewById(R.id.daftarTextView)
         logintombol = findViewById(R.id.loginButton)
+        forgotPass = findViewById(R.id.forgotPassTextView)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        enableEdgeToEdge()
+
         setContentView(R.layout.activity_login)
 
         initComponents()
@@ -30,7 +31,12 @@ class LoginMenu : AppCompatActivity() {
         }
 
         logintombol.setOnClickListener{
-            val intent = Intent(this@LoginMenu, MainActivity::class.java)
+            val intent = Intent(this@LoginMenu, OrderMenu::class.java)
+            startActivity(intent)
+        }
+
+        forgotPass.setOnClickListener {
+            val intent = Intent(this@LoginMenu, ForgotPassMenu::class.java)
             startActivity(intent)
         }
     }

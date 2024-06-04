@@ -10,6 +10,21 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
 
+    <fragment
+        android:id="@+id/Add"
+        android:name="com.example.easybridal_partner.FragmentAddServices"
+        android:label="fragment_add"
+        tools:layout="@layout/activity_add_services"
+        />
+
+    <fragment
+        android:id="@+id/Profile"
+        android:name="com.example.easybridal_partner.FragmentAccountMenu"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account_menu"
+        />
+
+
 <!--TODO: tambahin fragment lainnya-->
 
 </navigation>

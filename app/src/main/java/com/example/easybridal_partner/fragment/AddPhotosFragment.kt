@@ -14,6 +14,6 @@ class AddPhotosFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add_photos, container, false)
+        return inflater.inflate(R.layout.fragment_upload_photos, container, false)
     }
 }

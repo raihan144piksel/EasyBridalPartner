@@ -24,7 +24,7 @@ class ForgotPassMenu : AppCompatActivity() {
         initcomponents()
 
         send.setOnClickListener {
-            val intent = Intent(this@ForgotPassMenu, MainActivity::class.java)
+            val intent = Intent(this@ForgotPassMenu, LoadingApp::class.java)
             startActivity(intent)
         }
 

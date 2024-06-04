@@ -63,15 +63,18 @@
                     android:gravity="center_vertical"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/date_text_view"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="03-01-2024"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:layout_gravity="end"/>-->
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/date_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="03-01-2024"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
+
         </LinearLayout>
 
         <TextView
@@ -90,5 +93,7 @@
             android:src="@drawable/_dot"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="8dp" />
+
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>

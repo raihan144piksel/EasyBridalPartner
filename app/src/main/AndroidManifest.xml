@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- Required permission for reading external storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,14 +15,54 @@
         android:theme="@style/Theme.EasyBridal_Partner"
         tools:targetApi="31">
         <activity
-            android:name=".OrderMenu"
-            android:exported="false"
-            android:label="@string/title_activity_order_menu"
-            android:theme="@style/Theme.EasyBridal_Partner" />
-        <activity
             android:name=".Order"
             android:exported="false"
             android:label="@string/title_activity_order"
+            android:theme="@style/Theme.EasyBridal_Partner" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.EasyBridal_Partner" />
+        <activity
+            android:name=".Main"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.EasyBridal_Partner" />
+        <activity
+            android:name=".AddServices"
+            android:exported="false"
+            android:label="@string/title_activity_add_services"
+            android:theme="@style/Theme.EasyBridal_Partner" />
+        <activity
+            android:name=".EditProfileMenu"
+            android:exported="false"
+            android:label="@string/title_activity_edit_profile_menu"
+            android:theme="@style/Theme.EasyBridal_Partner" />
+        <activity
+            android:name=".AdvertisementMenu"
+            android:exported="false"
+            android:label="@string/title_activity_advertisement_menu"
+            android:theme="@style/Theme.EasyBridal_Partner" />
+        <activity
+            android:name=".WithdrawSuccessMenu"
+            android:exported="false"
+            android:label="@string/title_activity_widthdraw_success_menu"
+            android:theme="@style/Theme.EasyBridal_Partner" />
+        <activity
+            android:name=".WidthrawAmountMenu"
+            android:exported="false"
+            android:label="@string/title_activity_widthdraw_amount_menu"
+            android:theme="@style/Theme.EasyBridal_Partner" />
+        <activity
+            android:name=".ChatMenu"
+            android:exported="false"
+            android:label="@string/title_activity_chat_menu"
+            android:theme="@style/Theme.EasyBridal_Partner" />
+        <activity
+            android:name=".OrderMenu"
+            android:exported="false"
+            android:label="@string/title_activity_order_menu"
             android:theme="@style/Theme.EasyBridal_Partner" />
         <activity
             android:name=".OrderAdapter"
@@ -53,7 +95,7 @@
             android:label="@string/title_activity_login_menu"
             android:theme="@style/Theme.EasyBridal_Partner" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoadingApp"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

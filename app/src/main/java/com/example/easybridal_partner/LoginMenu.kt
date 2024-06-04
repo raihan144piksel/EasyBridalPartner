@@ -31,7 +31,7 @@ class LoginMenu : AppCompatActivity() {
         }
 
         logintombol.setOnClickListener{
-            val intent = Intent(this@LoginMenu, OrderMenu::class.java)
+            val intent = Intent(this@LoginMenu, ChatMenu::class.java)
             startActivity(intent)
         }
 

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".LoadingApp">
 
     <ImageView
         android:id="@+id/openingImageView"

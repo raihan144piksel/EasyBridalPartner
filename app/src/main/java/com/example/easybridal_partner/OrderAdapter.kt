@@ -26,7 +26,7 @@ class OrderAdapter(private val orders: List<Order>) : RecyclerView.Adapter<Order
         private val priceTextView: TextView = itemView.findViewById(R.id.price_text_view)
         private val statusTextView: TextView = itemView.findViewById(R.id.status_text_view)
         private val ratingTextView: TextView = itemView.findViewById(R.id.rating_text_view)
-        private val dateTextView: TextView = itemView.findViewById(R.id.date_text_view)
+//        private val dateTextView: TextView = itemView.findViewById(R.id.date_text_view)
         private val imageView: ImageView = itemView.findViewById(R.id.image_view)
 
         fun bind(order: Order) {
@@ -35,7 +35,7 @@ class OrderAdapter(private val orders: List<Order>) : RecyclerView.Adapter<Order
             statusTextView.text = order.status
             statusTextView.setBackgroundResource(order.statusColorResId)
             ratingTextView.text = order.rating
-            dateTextView.text = order.date
+//            dateTextView.text = order.date
             imageView.setImageResource(order.imageResId)
         }
     }

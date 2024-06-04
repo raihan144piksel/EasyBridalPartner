@@ -6,13 +6,12 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.imageview.ShapeableImageView
 
-class EditProfileMenu : AppCompatActivity() {
+class EditProfileActivity : AppCompatActivity() {
 
     private lateinit var backArrow: ImageView
     private lateinit var profilePicture: ShapeableImageView

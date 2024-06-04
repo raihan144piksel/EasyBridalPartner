@@ -16,6 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/backArrow"
             android:layout_width="12dp"
             android:layout_height="20dp"
             app:layout_constraintBottom_toBottomOf="parent"

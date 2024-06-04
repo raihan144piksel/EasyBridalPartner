@@ -28,12 +28,17 @@
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.EasyBridal_Partner" />
         <activity
-            android:name=".EditProfileMenu"
+            android:name=".ServiceActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.EasyBridal_Partner" />
+        <activity
+            android:name=".EditProfileActivity"
             android:exported="false"
             android:label="@string/title_activity_edit_profile_menu"
             android:theme="@style/Theme.EasyBridal_Partner" />
         <activity
-            android:name=".AdvertisementMenu"
+            android:name=".AdvertisementActivity"
             android:exported="false"
             android:label="@string/title_activity_advertisement_menu"
             android:theme="@style/Theme.EasyBridal_Partner" />
@@ -58,7 +63,7 @@
             android:label="@string/title_activity_order_adapter"
             android:theme="@style/Theme.EasyBridal_Partner" />
         <activity
-            android:name=".ChangeLanguageMenu"
+            android:name=".LanguageActivity"
             android:exported="false"
             android:label="@string/title_activity_change_language_menu"
             android:theme="@style/Theme.EasyBridal_Partner" />

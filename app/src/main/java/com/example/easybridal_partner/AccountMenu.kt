@@ -30,7 +30,7 @@ class AccountMenuFragment : Fragment() {
         initComponents(view)
 
         changeLanguage.setOnClickListener {
-            val intent = Intent(activity, ChangeLanguageMenu::class.java)
+            val intent = Intent(activity, LanguageActivity::class.java)
             startActivity(intent)
         }
         services.setOnClickListener {
@@ -38,7 +38,7 @@ class AccountMenuFragment : Fragment() {
             startActivity(intent)
         }
         advertisement.setOnClickListener {
-            val intent = Intent(activity, AdvertisementMenu::class.java) // Assuming AdvertisementMenu is the class you want to navigate to
+            val intent = Intent(activity, AdvertisementActivity::class.java) // Assuming AdvertisementMenu is the class you want to navigate to
             startActivity(intent)
         }
         payment.setOnClickListener {

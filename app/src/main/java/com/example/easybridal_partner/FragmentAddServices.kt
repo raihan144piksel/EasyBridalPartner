@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment
 
 class FragmentAddServices : Fragment() {
 
-    private lateinit var backArrow: ImageView
+
     private lateinit var addPhotosButton: LinearLayout
     private lateinit var publishButton: Button
 
@@ -29,13 +29,13 @@ class FragmentAddServices : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.activity_add_services, container, false)
 
-        backArrow = view.findViewById(R.id.backArrow)
+//        backArrow = view.findViewById(R.id.backArrow)
         addPhotosButton = view.findViewById(R.id.addPhotosButton)
         publishButton = view.findViewById(R.id.publishButton)
 
-        backArrow.setOnClickListener {
-            activity?.onBackPressed()
-        }
+//        backArrow.setOnClickListener {
+//            activity?.onBackPressed()
+//        }
 
         addPhotosButton.setOnClickListener {
             openGallery()

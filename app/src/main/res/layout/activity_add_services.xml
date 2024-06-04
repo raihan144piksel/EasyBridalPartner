@@ -16,14 +16,7 @@
         android:layout_marginTop="15dp">
 
         <!-- Back Arrow -->
-        <ImageView
-            android:id="@+id/backArrow"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_margin="16dp"
-            android:src="@drawable/back_arrow"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+
 
         <!-- Title -->
         <TextView
@@ -36,7 +29,7 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@id/backArrow"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Divider -->
@@ -48,7 +41,7 @@
             android:background="@color/abu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/backArrow" />
+            app:layout_constraintTop_toBottomOf="@id/title" />
 
         <!-- Add Photos Button -->
         <LinearLayout

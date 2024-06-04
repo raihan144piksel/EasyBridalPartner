@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:gravity="center_vertical"
-            android:text="Payment Setting"
+            android:text="Withdraw Money"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -46,131 +46,44 @@
         android:background="@color/light_grey" />
 
     <!-- Payment Options -->
-    <LinearLayout
+    <EditText
+        android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:hint="Nama"
+        android:background="@drawable/outline_grey"
+        android:padding="16dp"
+        />
 
-        <!-- Cash On Delivery -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/outline_grey"
-            android:orientation="horizontal"
-            android:padding="8dp">
+    <EditText
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rekenig"
+        android:background="@drawable/outline_grey"
+        android:padding="16dp"
+        />
 
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/logo_cod" />
+    <EditText
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No Rekenig"
+        android:background="@drawable/outline_grey"
+        android:padding="16dp"
+        />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:layout_weight="1"
-                android:text="Cash On Delivery"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        <!-- Master Card -->
-
-        <!-- VISA -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/outline_grey"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/logo_mactercard" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:layout_weight="1"
-                android:text="Master Card"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/outline_grey"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/logo_visa" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:layout_weight="1"
-                android:text="VISA"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        <!-- Dana -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/outline_grey"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/logo_dana" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:layout_weight="1"
-                android:text="Dana"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <!-- Withdraw Money Section -->
+    <EditText
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Penarikan"
+        android:background="@drawable/outline_grey"
+        android:padding="16dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -214,7 +127,7 @@
             android:background="@drawable/rounded_blue_bg"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Withdraw Method"
+            android:text="Confirm"
             android:textColor="@android:color/white"
             android:textSize="16sp"
             android:textStyle="bold" />

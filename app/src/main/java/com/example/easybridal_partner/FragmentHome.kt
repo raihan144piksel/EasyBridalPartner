@@ -1,9 +1,11 @@
 package com.example.easybridal_partner
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
@@ -132,5 +134,11 @@ class FragmentHome : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         navController = Navigation.findNavController(view)
+
+        val chat: ImageView = view.findViewById(R.id.chat_icon)
+        chat.setOnClickListener {
+            val intent = Intent(activity, ChatMenu::class.java)
+            startActivity(intent)
+        }
     }
 }

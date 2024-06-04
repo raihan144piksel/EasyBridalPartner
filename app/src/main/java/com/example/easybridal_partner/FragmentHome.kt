@@ -1,28 +1,35 @@
 package com.example.easybridal_partner
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.easybridal_partner.OrderAdapter
-import com.example.easybridal_partner.R
 
-class OrderMenu : AppCompatActivity() {
+class FragmentHome : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var orderAdapter: OrderAdapter
-    private lateinit var orders: MutableList<Order>
+    private lateinit var pusatData: MutableList<PusatData>
+    private var navController: NavController? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_order)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        recyclerView = findViewById(R.id.recycler_view)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView = view.findViewById(R.id.recycler_view)
+        recyclerView.layoutManager = LinearLayoutManager(context)
 
         // Initialize orders list and adapter
-        orders = mutableListOf(
-            Order(
+        pusatData = mutableListOf(
+            PusatData(
                 title = "Premium Western Catering",
                 price = "$252.00",
                 status = "Completed",
@@ -31,7 +38,7 @@ class OrderMenu : AppCompatActivity() {
                 imageResId = R.drawable.ellipse_2, // Replace with your image drawable
                 statusColorResId = R.color.green // Replace with your status color
             ),
-            Order(
+            PusatData(
                 title = "Regular Western Catering",
                 price = "$122.00",
                 status = "Cancelled",
@@ -40,7 +47,7 @@ class OrderMenu : AppCompatActivity() {
                 imageResId = R.drawable.ellipse_4, // Replace with your image drawable
                 statusColorResId = R.color.red // Replace with your status color
             ),
-            Order(
+            PusatData(
                 title = "Regular Western Catering",
                 price = "$122.00",
                 status = "Completed",
@@ -49,7 +56,7 @@ class OrderMenu : AppCompatActivity() {
                 imageResId = R.drawable.ellipse_4, // Replace with your image drawable
                 statusColorResId = R.color.green // Replace with your status color
             ),
-            Order(
+            PusatData(
                 title = "Premium Western Catering",
                 price = "$252.00",
                 status = "Booked",
@@ -58,7 +65,7 @@ class OrderMenu : AppCompatActivity() {
                 imageResId = R.drawable.ellipse_2, // Replace with your image drawable
                 statusColorResId = R.color.light_brown // Replace with your status color
             ),
-            Order(
+            PusatData(
                 title = "Premium Western Catering",
                 price = "$252.00",
                 status = "Booked",
@@ -67,7 +74,7 @@ class OrderMenu : AppCompatActivity() {
                 imageResId = R.drawable.ellipse_2, // Replace with your image drawable
                 statusColorResId = R.color.light_brown // Replace with your status color
             ),
-            Order(
+            PusatData(
                 title = "Premium Western Catering",
                 price = "$252.00",
                 status = "Booked",
@@ -76,7 +83,7 @@ class OrderMenu : AppCompatActivity() {
                 imageResId = R.drawable.ellipse_2, // Replace with your image drawable
                 statusColorResId = R.color.light_brown // Replace with your status color
             ),
-            Order(
+            PusatData(
                 title = "Premium Western Catering",
                 price = "$252.00",
                 status = "Booked",
@@ -85,7 +92,7 @@ class OrderMenu : AppCompatActivity() {
                 imageResId = R.drawable.ellipse_2, // Replace with your image drawable
                 statusColorResId = R.color.light_brown // Replace with your status color
             ),
-            Order(
+            PusatData(
                 title = "Premium Western Catering",
                 price = "$252.00",
                 status = "Booked",
@@ -94,7 +101,7 @@ class OrderMenu : AppCompatActivity() {
                 imageResId = R.drawable.ellipse_2, // Replace with your image drawable
                 statusColorResId = R.color.light_brown // Replace with your status color
             ),
-            Order(
+            PusatData(
                 title = "Premium Western Catering",
                 price = "$252.00",
                 status = "Booked",
@@ -103,7 +110,7 @@ class OrderMenu : AppCompatActivity() {
                 imageResId = R.drawable.ellipse_2, // Replace with your image drawable
                 statusColorResId = R.color.light_brown // Replace with your status color
             ),
-            Order(
+            PusatData(
                 title = "Premium Western Catering",
                 price = "$252.00",
                 status = "Booked",
@@ -115,7 +122,15 @@ class OrderMenu : AppCompatActivity() {
             // Add more orders as needed
         )
         // Add orders to the list here
-        orderAdapter = OrderAdapter(orders)
+        orderAdapter = OrderAdapter(pusatData)
         recyclerView.adapter = orderAdapter
+
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        navController = Navigation.findNavController(view)
     }
 }

@@ -2,12 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Order"
-        android:id="@+id/Order"
-        android:icon="@drawable/ordernavicon"/>
+        android:id="@+id/fragmentHome"
+        android:icon="@drawable/ordernavicon"
+        />
     <item android:title="Add"
         android:id="@+id/Add"
         android:icon="@drawable/addnavicon"/>
     <item android:title="Profile"
         android:id="@+id/Profile"
         android:icon="@drawable/profilnavicon"/>
+<!--TODO: samain id fragmentnya sama navbar-->
 </menu>

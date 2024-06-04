@@ -15,17 +15,10 @@
         android:theme="@style/Theme.EasyBridal_Partner"
         tools:targetApi="31">
         <activity
-            android:name=".Order"
-            android:exported="false"
-            android:label="@string/title_activity_order"
-            android:theme="@style/Theme.EasyBridal_Partner" />
+            android:name=".Home"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.EasyBridal_Partner" />
-        <activity
-            android:name=".Main"
             android:exported="false"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.EasyBridal_Partner" />
@@ -58,11 +51,6 @@
             android:name=".ChatMenu"
             android:exported="false"
             android:label="@string/title_activity_chat_menu"
-            android:theme="@style/Theme.EasyBridal_Partner" />
-        <activity
-            android:name=".OrderMenu"
-            android:exported="false"
-            android:label="@string/title_activity_order_menu"
             android:theme="@style/Theme.EasyBridal_Partner" />
         <activity
             android:name=".OrderAdapter"

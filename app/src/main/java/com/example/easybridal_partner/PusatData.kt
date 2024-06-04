@@ -1,6 +1,6 @@
 package com.example.easybridal_partner
 
-data class Order(
+data class PusatData(
     val title: String,
     val price: String,
     val status: String,

@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class OrderAdapter(private val orders: List<Order>) : RecyclerView.Adapter<OrderAdapter.OrderViewHolder>() {
+class OrderAdapter(private val pusatData: List<PusatData>) : RecyclerView.Adapter<OrderAdapter.OrderViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OrderViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.fragment_item_order_layout, parent, false)
@@ -15,11 +15,11 @@ class OrderAdapter(private val orders: List<Order>) : RecyclerView.Adapter<Order
     }
 
     override fun onBindViewHolder(holder: OrderViewHolder, position: Int) {
-        val order = orders[position]
+        val order = pusatData[position]
         holder.bind(order)
     }
 
-    override fun getItemCount() = orders.size
+    override fun getItemCount() = pusatData.size
 
     class OrderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val titleTextView: TextView = itemView.findViewById(R.id.title_text_view)
@@ -29,14 +29,14 @@ class OrderAdapter(private val orders: List<Order>) : RecyclerView.Adapter<Order
 //        private val dateTextView: TextView = itemView.findViewById(R.id.date_text_view)
         private val imageView: ImageView = itemView.findViewById(R.id.image_view)
 
-        fun bind(order: Order) {
-            titleTextView.text = order.title
-            priceTextView.text = order.price
-            statusTextView.text = order.status
-            statusTextView.setBackgroundResource(order.statusColorResId)
-            ratingTextView.text = order.rating
+        fun bind(pusatData: PusatData) {
+            titleTextView.text = pusatData.title
+            priceTextView.text = pusatData.price
+            statusTextView.text = pusatData.status
+            statusTextView.setBackgroundResource(pusatData.statusColorResId)
+            ratingTextView.text = pusatData.rating
 //            dateTextView.text = order.date
-            imageView.setImageResource(order.imageResId)
+            imageView.setImageResource(pusatData.imageResId)
         }
     }
 }

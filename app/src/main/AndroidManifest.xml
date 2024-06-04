@@ -48,11 +48,6 @@
             android:label="@string/title_activity_widthdraw_success_menu"
             android:theme="@style/Theme.EasyBridal_Partner" />
         <activity
-            android:name=".WidthrawAmountMenu"
-            android:exported="false"
-            android:label="@string/title_activity_widthdraw_amount_menu"
-            android:theme="@style/Theme.EasyBridal_Partner" />
-        <activity
             android:name=".ChatMenu"
             android:exported="false"
             android:label="@string/title_activity_chat_menu"

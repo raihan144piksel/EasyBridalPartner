@@ -96,7 +96,6 @@
 
     <!--Services Section-->
     <LinearLayout
-        android:id="@+id/serviceButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -114,6 +113,7 @@
                 app:srcCompat="@drawable/icons_service" />
 
             <Button
+                android:id="@+id/serviceButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
@@ -135,7 +135,6 @@
 
     <!--Advertisement Section-->
     <LinearLayout
-        android:id="@+id/advertisementButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -153,6 +152,7 @@
                 app:srcCompat="@drawable/ad_icon" />
 
             <Button
+                android:id="@+id/advertisementButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
@@ -176,7 +176,6 @@
 
     <!--Payment Section-->
     <LinearLayout
-        android:id="@+id/paymentButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -194,6 +193,7 @@
                 app:srcCompat="@drawable/payment_icon" />
 
             <Button
+                android:id="@+id/paymentButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
@@ -217,13 +217,11 @@
 
     <!--Language Section-->
     <LinearLayout
-        android:id="@+id/LanguageButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/languageButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -236,6 +234,7 @@
                 app:srcCompat="@drawable/lang_icon" />
 
             <Button
+                android:id="@+id/languageButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"

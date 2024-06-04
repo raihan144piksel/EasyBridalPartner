@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
@@ -32,7 +33,7 @@ class FragmentAccountMenu : Fragment() {
         val view = inflater.inflate(R.layout.fragment_account_menu, container, false)
 
         // Temukan LinearLayout berdasarkan ID-nya dan atur OnClickListener
-        val serviceButton: LinearLayout = view.findViewById(R.id.serviceButton)
+        val serviceButton: Button = view.findViewById(R.id.serviceButton)
         serviceButton.setOnClickListener {
             // Tangani peristiwa klik dan navigasi ke aktivitas yang diinginkan
             val intent = Intent(activity, ServiceActivity::class.java) // Ganti ServiceActivity dengan aktivitas target Anda
@@ -40,19 +41,19 @@ class FragmentAccountMenu : Fragment() {
         }
 
         // Ulangi untuk tombol lainnya
-        val advertisementButton: LinearLayout = view.findViewById(R.id.advertisementButton)
+        val advertisementButton: Button = view.findViewById(R.id.advertisementButton)
         advertisementButton.setOnClickListener {
             val intent = Intent(activity, AdvertisementActivity::class.java) // Ganti AdvertisementActivity dengan aktivitas target Anda
             startActivity(intent)
         }
 
-        val paymentButton: LinearLayout = view.findViewById(R.id.paymentButton)
+        val paymentButton: Button = view.findViewById(R.id.paymentButton)
         paymentButton.setOnClickListener {
             val intent = Intent(activity, PaymentActivity::class.java) // Ganti PaymentActivity dengan aktivitas target Anda
             startActivity(intent)
         }
 
-        val languageButton: LinearLayout = view.findViewById(R.id.LanguageButton)
+        val languageButton: Button = view.findViewById(R.id.languageButton)
         languageButton.setOnClickListener {
             val intent = Intent(activity, LanguageActivity::class.java) // Ganti LanguageActivity dengan aktivitas target Anda
             startActivity(intent)

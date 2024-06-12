@@ -2,9 +2,7 @@ package com.example.easybridal_partner
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -12,8 +10,9 @@ class PaymentActivity : AppCompatActivity() {
 
     private lateinit var confirmButton: TextView
 
-    private fun initComponents(){
+    private fun initComponents() {
         confirmButton = findViewById(R.id.confirm_button)
+
 
     }
 
@@ -29,5 +28,9 @@ class PaymentActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val backArrow: ImageView = findViewById(R.id.backArrow)
+        backArrow.setOnClickListener {
+            finish()
+        }
     }
 }

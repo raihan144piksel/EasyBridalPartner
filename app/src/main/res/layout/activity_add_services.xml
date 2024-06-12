@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bg_fade"
     android:orientation="horizontal"
-    tools:context=".FragmentAddServices">
+    tools:context=".AddServicesActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
@@ -14,9 +14,6 @@
         android:layout_height="match_parent"
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="15dp">
-
-        <!-- Back Arrow -->
-
 
         <!-- Title -->
         <TextView
@@ -70,80 +67,87 @@
 
         </LinearLayout>
 
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/publishButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addPhotosButton">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Elemen lainnya -->
+                <EditText
+                    android:id="@+id/titleEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_radius_light_grey"
+                    android:hint="Title"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Price EditText -->
+                <EditText
+                    android:id="@+id/priceEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_radius_light_grey"
+                    android:hint="Price"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titleEditText" />
+
+                <EditText
+                    android:id="@+id/descriptionEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_radius_light_grey"
+                    android:hint="Description"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/priceEditText" />
+
+                <!-- Location EditText -->
+                <EditText
+                    android:id="@+id/locationEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_radius_light_grey"
+                    android:hint="Location"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/descriptionEditText" />
+
+                <!-- Elemen lainnya -->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+
         <!-- Title EditText -->
-        <EditText
-            android:id="@+id/titleEditText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/bg_radius_light_grey"
-            android:hint="Title"
-            android:padding="16dp"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/addPhotosButton" />
 
-        <!-- Price EditText -->
-        <EditText
-            android:id="@+id/priceEditText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/bg_radius_light_grey"
-            android:hint="Price"
-            android:padding="16dp"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleEditText" />
-
-        <!-- Category EditText -->
-        <!--        <EditText-->
-        <!--            android:id="@+id/categoryEditText"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginTop="16dp"-->
-        <!--            android:background="@drawable/bg_radius_light_grey"-->
-        <!--            android:hint="Category"-->
-        <!--            android:padding="16dp"-->
-        <!--            android:textColor="@color/black"-->
-        <!--            android:textSize="16sp"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@id/priceEditText" />-->
-
-        <!-- Description EditText -->
-        <EditText
-            android:id="@+id/descriptionEditText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/bg_radius_light_grey"
-            android:hint="Description"
-            android:padding="16dp"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/priceEditText" />
-
-        <!-- Location EditText -->
-        <EditText
-            android:id="@+id/locationEditText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/bg_radius_light_grey"
-            android:hint="Location"
-            android:padding="16dp"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/descriptionEditText" />
 
         <!-- Publish Button -->
         <Button

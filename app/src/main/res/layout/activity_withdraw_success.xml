@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp"
             android:textAlignment="center"
-            android:text="Selamat, Anda saya skem, muehehehe. Lorem ipsum dolor sit amet consectetur. At interdum nunc posuere ultricies non enim sit amet tellus. Elit amet pretium lectus amet." />
+            android:text="Lorem ipsum dolor sit amet consectetur. At interdum nunc posuere ultricies non enim sit amet tellus. Elit amet pretium lectus amet." />
 
 
     </LinearLayout>

@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class OrderAdapter(private val pusatData: List<PusatData>) : RecyclerView.Adapter<OrderAdapter.OrderViewHolder>() {
+class OrderAdapter(private var pusatData: List<PusatData>) : RecyclerView.Adapter<OrderAdapter.OrderViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OrderViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.fragment_item_order_layout, parent, false)
@@ -21,12 +21,16 @@ class OrderAdapter(private val pusatData: List<PusatData>) : RecyclerView.Adapte
 
     override fun getItemCount() = pusatData.size
 
+    fun updateData(newData: List<PusatData>) {
+        pusatData = newData
+        notifyDataSetChanged()
+    }
+
     class OrderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val titleTextView: TextView = itemView.findViewById(R.id.title_text_view)
         private val priceTextView: TextView = itemView.findViewById(R.id.price_text_view)
         private val statusTextView: TextView = itemView.findViewById(R.id.status_text_view)
         private val ratingTextView: TextView = itemView.findViewById(R.id.rating_text_view)
-//        private val dateTextView: TextView = itemView.findViewById(R.id.date_text_view)
         private val imageView: ImageView = itemView.findViewById(R.id.image_view)
 
         fun bind(pusatData: PusatData) {
@@ -35,7 +39,6 @@ class OrderAdapter(private val pusatData: List<PusatData>) : RecyclerView.Adapte
             statusTextView.text = pusatData.status
             statusTextView.setBackgroundResource(pusatData.statusColorResId)
             ratingTextView.text = pusatData.rating
-//            dateTextView.text = order.date
             imageView.setImageResource(pusatData.imageResId)
         }
     }

@@ -78,12 +78,12 @@
             android:textStyle="bold"
             android:layout_gravity="center_vertical" />
 
-        <ImageView
-            android:layout_width="4dp"
-            android:layout_height="16dp"
-            android:src="@drawable/_dot"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="8dp" />
+<!--        <ImageView-->
+<!--            android:layout_width="4dp"-->
+<!--            android:layout_height="16dp"-->
+<!--            android:src="@drawable/_dot"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginStart="8dp" />-->
 
 
     </LinearLayout>

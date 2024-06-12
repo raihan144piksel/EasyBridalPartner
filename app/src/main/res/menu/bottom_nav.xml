@@ -5,9 +5,9 @@
         android:id="@+id/fragmentHome"
         android:icon="@drawable/ordernavicon"
         />
-    <item android:title="Add"
-        android:id="@+id/Add"
-        android:icon="@drawable/addnavicon"/>
+<!--    <item android:title="Add"-->
+<!--        android:id="@+id/Add"-->
+<!--        android:icon="@drawable/addnavicon"/>-->
 
     <item android:title="Profile"
         android:id="@+id/Profile"

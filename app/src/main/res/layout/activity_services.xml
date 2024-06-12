@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/serviceMenu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical"
-    android:id="@+id/serviceMenu">
+    android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,11 +14,11 @@
         android:layout_marginTop="15dp">
 
         <ImageView
-            android:id="@+id/topBar"
-            android:layout_width="12dp"
+            android:id="@+id/backArrow"
+            android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginTop="4dp"
-            android:src="@drawable/back_arrow"
+            android:src="@drawable/baseline_arrow_back_ios_24"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,12 +26,12 @@
             android:id="@+id/serviceTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="5dp"
             android:gravity="center"
             android:text="Services"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintLeft_toRightOf="@id/topBar"
+            app:layout_constraintLeft_toRightOf="@id/backArrow"
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
@@ -42,130 +42,20 @@
             android:background="@color/abu"
             app:layout_constraintTop_toBottomOf="@+id/serviceTextView" />
 
-        <!--Services List-->
-        <LinearLayout
+        <!-- RecyclerView untuk Daftar Layanan -->
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/servicesList"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="20dp"
             android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/button"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/AddServiceButton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginVertical="5dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginEnd="10dp"
-                    app:srcCompat="@drawable/service_image" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="BUNDLING FULL PACKAGE PRE+WEDDING"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="by Java Bride - Wedding Planner" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Rp15.000.000"
-                            android:textSize="17dp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="5dp"
-                            android:contentDescription="@string/ui_setting"
-                            app:srcCompat="@drawable/ui_setting" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginVertical="5dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginEnd="10dp"
-                    app:srcCompat="@drawable/service_image_2" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="BUNDLING FULL PACKAGE PRE+WEDDING"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="by Java Bride - Wedding Planner" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Rp20.000.000"
-                            android:textSize="17dp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="5dp"
-                            android:contentDescription="@string/ui_setting"
-                            app:srcCompat="@drawable/ui_setting" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/AddServiceButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"

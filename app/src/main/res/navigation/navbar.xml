@@ -11,13 +11,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/Add"
-        android:name="com.example.easybridal_partner.FragmentAddServices"
-        android:label="fragment_add"
-        tools:layout="@layout/activity_add_services"
-        />
-
-    <fragment
         android:id="@+id/Profile"
         android:name="com.example.easybridal_partner.FragmentAccountMenu"
         android:label="fragment_account"

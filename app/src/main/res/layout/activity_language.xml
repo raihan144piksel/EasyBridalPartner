@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white"
     android:orientation="vertical"
     tools:context=".LanguageActivity">
@@ -21,13 +21,13 @@
             android:src="@drawable/back_arrow" />
 
         <TextView
-            android:textStyle="bold"
-            android:layout_marginStart="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:text="Language"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <View
@@ -41,119 +41,76 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
-        <!--Eglish Language Button-->
-        <LinearLayout
+        <RelativeLayout
+            android:layout_marginVertical="15dp"
             android:id="@+id/english_language"
-            android:layout_marginBottom="15dp"
-            android:layout_width="380dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/outline_grey"
-            android:padding="10dp">
+            android:padding="13dp"
+            android:background="@drawable/outline_grey">
 
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:layout_gravity="start"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/english_icon" />
+                android:src="@drawable/circle_flags__uk"
+                android:layout_alignParentStart="true"
+                />
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
                 android:text="English"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                />
 
             <ImageView
                 android:id="@+id/arrow_english"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="end"
-                android:layout_marginStart="8dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
                 android:src="@drawable/baseline_check_24"
-                android:visibility="gone"/>
-        </LinearLayout>
+                android:visibility="gone" />
+        </RelativeLayout>
 
-        <!--Indonesia Language Button-->
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/indonesia_language"
-            android:layout_marginBottom="15dp"
-            android:layout_width="380dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/outline_grey"
-            android:padding="10dp">
+            android:padding="13dp"
+            android:background="@drawable/outline_grey">
 
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:layout_gravity="start"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/indonesia_icon" />
+                android:src="@drawable/circle_flags_id"
+                android:layout_alignParentStart="true"
+                />
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
                 android:text="Indonesia"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                />
 
             <ImageView
                 android:id="@+id/arrow_indonesia"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="end"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/baseline_check_24"
-                android:visibility="gone"/>
-        </LinearLayout>
-
-        <!--USA Language Button-->
-        <LinearLayout
-            android:id="@+id/usa_language"
-            android:layout_marginBottom="15dp"
-            android:layout_width="380dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/outline_grey"
-            android:padding="10dp">
-
-            <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:layout_gravity="start"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/usa_icon" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="USA"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:id="@+id/arrow_usa"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="end"
-                android:layout_marginStart="8dp"
                 android:src="@drawable/baseline_check_24"
-                android:visibility="gone"/>
-        </LinearLayout>
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
 
     </LinearLayout>
 </LinearLayout>

@@ -6,16 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 
 class AdvertisementActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_advertisement)
 
-        // Initialize the back button
         val backArrow: ImageView = findViewById(R.id.backArrow)
-
-        // Set an onClickListener to handle the back button click
         backArrow.setOnClickListener {
-            // Close the current activity and go back to the previous activity
             finish()
         }
     }
